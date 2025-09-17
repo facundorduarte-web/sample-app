@@ -1,3 +1,5 @@
+
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -14,6 +16,6 @@ spec:
     spec:
       containers:
       - name: production-container
-        image: <todo>
-        ports:
+        image: us-east1-docker.pkg.dev/qwiklabs-gcp-04-bc83539e3e15/facundorduarte-web/hello-cloudbuild:v1.0 
+        ports: 
         - containerPort: 8080
